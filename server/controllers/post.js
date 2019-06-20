@@ -34,7 +34,7 @@ module.exports = {
         try{
             let db = req.app.get('db')
             let {id} = req.params
-            let posts = await db.getpost(id)
+            let posts = await db.getPost(id)
             let post = posts[0]
             res.send(post)
 
